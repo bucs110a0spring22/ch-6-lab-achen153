@@ -33,6 +33,12 @@ def turtleGraph(n):
   for i in range(1, n +1):
     result = seq3np1(i)
     if max_so_far <= result: 
+      max_so_far = result
+      wn.setworldcoordinates(0, 0, n + 10, max_so_far)
+      turtleReset(turl1)
+      turtle1.goto(0, max_so_far)
+      turtl
+       
 
 def main():
   start = int(input("Please enter a positive number:"))
