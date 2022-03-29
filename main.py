@@ -37,7 +37,9 @@ def turtleGraph(n):
       wn.setworldcoordinates(0, 0, n + 10, max_so_far)
       turtleReset(turl1)
       turtle1.goto(0, max_so_far)
-      turtl
+      turtl.write(("Maximum so far:", i, max_so_far))
+    turt2.goto(i, seq3np1(i))
+  wn.exitonclick()
        
 
 def main():
