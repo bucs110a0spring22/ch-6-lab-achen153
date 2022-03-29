@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import turtle
+
 
 def seq3np1(n):
     """
@@ -5,14 +9,40 @@ def seq3np1(n):
         args: n (int) starting value for 3n+1 sequence
         return: None
     """
-    while(n != 1):
-        print(n)
-        if(n % 2) == 0:        # n is even
+
+    count = 0
+    while n != 1:
+        #print('Iteration ' + str(count))
+        #print('Value of n: ' + str(n))
+        if n % 2 == 0:  # n is even
             n = n // 2
-        else:                 # n is odd
+        else: # n is odd
             n = n * 3 + 1
-    print(n)                  # the last print is 1
+        count += 1
+    #print('This is iteration ' + str(count))
+    #print('And the value of n should be 1, it is ' + str(n))
+    return count  # the last print is 1
+
+def turtleGraph(n):
+  print("inside function, n is ", n)
+  turt1 = turtle.Turtle()
+  turt2 = turtle.Turtle()
+  wn = turtle.Screen()
+  wn.setworldcoordinates(0, 0, 10, 10)
+  max_so_far = 0 
+  for i in range(1, n +1):
+    result = seq3np1(i)
+    if max_so_far <= result: 
 
 def main():
-	seq3np1(3)
+  start = int(input("Please enter a positive number:"))
+  if start < 1:
+    return 
+  for i in range(1,start+1):
+    print("This is i", i)
+    iteration_count = seq3np1(i)
+    print("Final interation count", iteration_count)
+
+  turtleGraph(start)
+  
 main()
