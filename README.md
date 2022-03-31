@@ -16,10 +16,10 @@ Grace days used for this assignment: < # >
 Grace days remaining: < # >/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+None
 
 ## REFERENCES:
- < List any outside resources used >
+ TA
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+ Using 1 grace day

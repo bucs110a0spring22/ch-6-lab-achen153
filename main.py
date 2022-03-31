@@ -26,6 +26,8 @@ def seq3np1(n):
 def turtleGraph(n):
   print("inside function, n is ", n)
   turt1 = turtle.Turtle()
+  turt1.speed(1)
+  turt1.up()
   turt2 = turtle.Turtle()
   wn = turtle.Screen()
   wn.setworldcoordinates(0, 0, 10, 10)
@@ -34,12 +36,13 @@ def turtleGraph(n):
     result = seq3np1(i)
     if max_so_far <= result: 
       max_so_far = result
-      wn.setworldcoordinates(0, 0, n + 10, max_so_far)
-      turtleReset(turl1)
-      turtle1.goto(0, max_so_far)
-      turtl.write(("Maximum so far:", i, max_so_far))
+      wn.setworldcoordinates(0, 0, n + 10, max_so_far + 10)
+      turt1.clear()
+      turt1.goto(0, max_so_far)
+      turt1.write(f"Maximum so far: startig vale{i} _iteratios {max_so_far}")
+      turt1.up()
     turt2.goto(i, seq3np1(i))
-  wn.exitonclick()
+  wn.exitonclick
        
 
 def main():
